@@ -42,13 +42,17 @@ nav{display:flex;gap:clamp(18px,2.4vw,34px);align-items:center}nav a{color:var(-
 /* visible workshop tactility + interaction */
 @keyframes shop-drift{from{transform:translate3d(-12px,-10px,0) rotate(.001deg)}to{transform:translate3d(18px,16px,0) rotate(.001deg)}}
 @keyframes glow-sweep{from{transform:translate3d(-1.5%,0,0);opacity:.72}to{transform:translate3d(1.5%,-1%,0);opacity:1}}
-.btn,.service-card,.hero-facts li,.tick-list li,.image-stack img,.mini-card,.gallery figure,.contact-card,.brand-mark{transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s ease,border-color .28s ease,filter .28s ease,opacity .28s ease,background .28s ease}
-.btn:hover{transform:translateY(-7px) scale(1.035);box-shadow:0 22px 48px rgba(0,0,0,.42),0 0 34px rgba(243,195,50,.18)}
-.service-card:hover,.mini-card:hover,.contact-card:hover{transform:translateY(-14px) scale(1.025);box-shadow:0 34px 90px rgba(0,0,0,.52),0 0 0 1px rgba(243,195,50,.18),0 0 46px rgba(243,195,50,.12);border-color:rgba(243,195,50,.46)}
-.service-card:hover:after{opacity:.48;filter:blur(26px)}
-.hero-facts li:hover,.tick-list li:hover{transform:translateX(8px) translateY(-4px);border-color:rgba(243,195,50,.42);background:rgba(255,255,255,.105);box-shadow:0 16px 34px rgba(0,0,0,.28)}
-.image-stack img:hover,.gallery figure:hover{transform:translateY(-12px) scale(1.035) rotate(-.35deg);box-shadow:0 34px 90px rgba(0,0,0,.55),0 0 0 1px rgba(243,195,50,.22);border-color:rgba(243,195,50,.42);filter:saturate(1.14) contrast(1.08)}
-.gallery figure:hover img{opacity:1}
-nav a:hover{color:var(--yellow);transform:translateY(-5px) scale(1.08);text-shadow:0 0 28px rgba(243,195,50,.55)}
-.brand:hover .brand-mark{transform:rotate(-12deg) scale(1.12);box-shadow:0 0 0 5px rgba(255,255,255,.08),0 0 42px rgba(243,195,50,.34)}
+.btn,.service-card,.hero-facts li,.tick-list li,.image-stack img,.mini-card,.gallery figure,.gallery img,.gallery figcaption,.contact-card,.brand-mark{transition:transform .24s cubic-bezier(.2,.8,.2,1),box-shadow .24s ease,border-color .24s ease,filter .24s ease,opacity .24s ease,background .24s ease,color .24s ease}
+.service-card,.mini-card,.contact-card,.gallery figure,.image-stack img,.btn,.hero-facts li,.tick-list li{will-change:transform}
+.btn:hover{transform:translateY(-5px) scale(1.018);box-shadow:0 18px 42px rgba(0,0,0,.38),0 0 28px rgba(243,195,50,.16);border-color:rgba(243,195,50,.46)}
+.service-card:hover,.mini-card:hover,.contact-card:hover{transform:translateY(-7px) scale(1.012);box-shadow:0 24px 62px rgba(0,0,0,.44),0 0 0 1px rgba(243,195,50,.34),0 0 34px rgba(243,195,50,.14);border-color:rgba(243,195,50,.62);background:linear-gradient(180deg,#182b3b,#0d1822)}
+.service-card:hover h3,.mini-card:hover strong{color:var(--yellow)}
+.service-card:hover span{transform:scale(1.06);box-shadow:0 0 0 4px rgba(243,195,50,.12)}
+.service-card:hover:after{opacity:.36;filter:blur(28px)}
+.hero-facts li:hover,.tick-list li:hover{transform:translateX(5px) translateY(-2px);border-color:rgba(243,195,50,.45);background:rgba(255,255,255,.105);box-shadow:0 12px 28px rgba(0,0,0,.26)}
+.image-stack img:hover,.gallery figure:hover{transform:translateY(-8px) scale(1.022) rotate(-.32deg);box-shadow:0 28px 72px rgba(0,0,0,.48),0 0 0 1px rgba(243,195,50,.32);border-color:rgba(243,195,50,.56);filter:saturate(1.09) contrast(1.05)}
+.gallery figure:hover img{opacity:.96;transform:scale(1.012)}
+.gallery figure:hover figcaption{transform:translateY(-4px);background:rgba(243,195,50,.94);color:#071018}
+nav a:hover{color:var(--yellow);transform:translateY(-4px) scale(1.045);text-shadow:0 0 26px rgba(243,195,50,.52)}
+.brand:hover .brand-mark{transform:rotate(-8deg) scale(1.06);box-shadow:0 0 0 5px rgba(255,255,255,.08),0 0 34px rgba(243,195,50,.3)}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.btn:hover,.service-card:hover,.mini-card:hover,.contact-card:hover,.hero-facts li:hover,.tick-list li:hover,.image-stack img:hover,.gallery figure:hover,nav a:hover,.brand:hover .brand-mark{transform:none!important}}
